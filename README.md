@@ -39,7 +39,7 @@ High volume channels are not necessarily high quality. Paid Search and Referral 
 ### SQL Queries
 
 **Bucket Analysis**
-
+```sql
 SELECT 
   CASE 
     WHEN lead_score > 60 THEN 'Hot'
@@ -52,10 +52,10 @@ SELECT
 FROM leads
 WHERE lead_score IS NOT NULL
 GROUP BY bucket;
-
+```
 
 **Lead Source Analysis**
-
+```sql
 SELECT 
   lead_source,
   COUNT(*) AS total,
@@ -65,6 +65,7 @@ FROM leads
 WHERE lead_source IS NOT NULL
 GROUP BY lead_source
 ORDER BY conversion_rate_pct DESC;
+```
 
 
 ### Tools Used:
