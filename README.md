@@ -35,6 +35,38 @@ High volume channels are not necessarily high quality. Paid Search and Referral 
 3. Paid Search and Referral deserve increased investment given their conversion efficiency
 4. Cold leads should be placed into a long-term nurture sequence rather than active outreach
 
+
+### SQL Queries
+
+**Bucket Analysis**
+
+SELECT 
+  CASE 
+    WHEN lead_score > 60 THEN 'Hot'
+    WHEN lead_score > 30 THEN 'Warm'
+    ELSE 'Cold'
+  END AS bucket,
+  COUNT(*) AS total,
+  SUM(CASE WHEN deal_value > 0 THEN 1 ELSE 0 END) AS converted,
+  ROUND(100.0 * SUM(CASE WHEN deal_value > 0 THEN 1 ELSE 0 END) / COUNT(*), 1) AS conversion_rate_pct
+FROM leads
+WHERE lead_score IS NOT NULL
+GROUP BY bucket;
+
+
+**Lead Source Analysis**
+
+SELECT 
+  lead_source,
+  COUNT(*) AS total,
+  SUM(CASE WHEN deal_value > 0 THEN 1 ELSE 0 END) AS converted,
+  ROUND(100.0 * SUM(CASE WHEN deal_value > 0 THEN 1 ELSE 0 END) / COUNT(*), 1) AS conversion_rate_pct
+FROM leads
+WHERE lead_source IS NOT NULL
+GROUP BY lead_source
+ORDER BY conversion_rate_pct DESC;
+
+
 ### Tools Used:
 - HubSpot CRM
 - PostgreSQL
