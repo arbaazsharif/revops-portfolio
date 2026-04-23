@@ -129,6 +129,3 @@ This is a portfolio MVP, not a production system. If I were rolling this out at 
 - `closed_lost_deals_import.csv` — sample data used to populate HubSpot
 - `screenshots/` — visuals of the working system
 
----
-
-**Built by Arbaaz Sharif | [GitHub](https://github.com/arbaazsharif) | [LinkedIn](https://linkedin.com)**
