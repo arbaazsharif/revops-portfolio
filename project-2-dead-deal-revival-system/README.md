@@ -29,7 +29,7 @@ The result: out of 19 dead deals, the system flagged 3 worth re-engaging and sen
 
 ## Architecture
 
-![Make.com Scenario](screenshots/make-scenario-full.png)
+![Make.com Scenario](screenshots/make-scenario-full.jpg)
 
 **Tech Stack:**
 - **HubSpot CRM** — where the deal and contact data lives
@@ -66,7 +66,7 @@ I wanted the scoring to reflect how a sales rep would actually prioritize their 
 - 50–74 → Medium (manual review)
 - Below 50 → Low (skip)
 
-![Scoring Logic in Google Sheets](screenshots/scoring-tab.png)
+![Scoring Logic in Google Sheets](screenshots/scoring-tab.jpg)
 
 ---
 
@@ -74,7 +74,7 @@ I wanted the scoring to reflect how a sales rep would actually prioritize their 
 
 All 19 closed-lost deals imported into HubSpot — the starting dataset for the system:
 
-![HubSpot Lost Deals Pipeline](screenshots/hubspot-lost-deals.png)
+![HubSpot Lost Deals Pipeline](screenshots/hubspot-lost-deals.jpg)
 
 After scoring, the system flagged 3 High-tier revival candidates:
 
@@ -86,7 +86,7 @@ After scoring, the system flagged 3 High-tier revival candidates:
 
 Each got a personalized re-engagement email automatically.
 
-![Sample Email Received](screenshots/email-received.png)
+![Sample Email Received](screenshots/email-received.jpg)
 
 ---
 
@@ -96,7 +96,7 @@ Halfway through building this, I hit a real bug — Gmail was firing 19 emails i
 
 **The fix:** an Array Aggregator placed between the Google Sheets "Add a Row" module and the "Search Rows" module. The trick was setting its Source Module back to the very first HubSpot search. That tells Make.com to wait until all 19 deals are processed before letting anything continue. Once the aggregator was in place, the search ran once on a fully-loaded Scoring tab and Gmail fired exactly 3 times — for the right 3 deals.
 
-![Array Aggregator with Filter](screenshots/aggregator-filter.png)
+![Array Aggregator with Filter](screenshots/aggregator-filter.jpg)
 
 The lesson: in Make.com, every bundle from a source module triggers the full chain independently unless you explicitly aggregate. That single concept was the biggest unlock for me on this project.
 
