@@ -104,14 +104,13 @@ The lesson: in Make.com, every bundle from a source module triggers the full cha
 
 ## What I'd Do Differently in Production
 
-This is a portfolio MVP, not a production system. If I were rolling this out at a real company:
+Opportunities to strengthen the system at scale:
 
-- **Move the scoring into HubSpot itself.** Google Sheets is great for showing the logic, but in production the Revival Score should live as a custom property in HubSpot so reps can see it without opening another tab.
-- **Replace row-by-row writes with a Bulk Add Rows call.** That would cut the number of operations way down per run.
+- **Move the scoring into HubSpot itself.** The Revival Score could live as a custom property in HubSpot so reps see it without opening another tab.
+- **Replace row-by-row writes with a Bulk Add Rows call.** This cuts the number of operations down significantly per run.
 - **Collapse the 3 HubSpot modules into one HTTP call** using HubSpot's associations API. Cleaner, faster, fewer credits.
 - **Add idempotency** with a HubSpot custom property (`revival_email_sent = true`) so the same contact never gets emailed twice across multiple runs.
-- **Move it to a scheduled trigger** — once a week, Tuesday or Wednesday morning — instead of running it manually.
-
+- **Move to a scheduled trigger** — once a week, Tuesday or Wednesday morning — instead of running manually.
 ---
 
 ## What I Learned
