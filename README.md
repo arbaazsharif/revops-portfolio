@@ -1,2 +1,3 @@
 1. [Lead Score Validator](./project-1-lead-score-validator/README.md) — Validated a lead scoring model    using HubSpot, Google Sheets, PostgreSQL, and Beekeeper Studio.
 2. [Dead Deal Revival System](./project-2-dead-deal-revival-system/README.md) — Built an automated workflow that identifies high-potential closed-lost deals and triggers personalized re-engagement emails using Make.com, HubSpot, Google Sheets, and Gmail
+3. [Rep Performance Scorecard Dashboard](project-3-rep-performance-scorecard/README.md) — Built a rep-level sales performance dashboard using PostgreSQL, Google Sheets, and Looker Studio. Surfaced insights on win rates, quota attainment, loss reasons, and revenue trends across a 5-rep B2B SaaS sales team.
