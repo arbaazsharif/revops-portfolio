@@ -53,4 +53,4 @@ The live dashboard provides an interactive view of funnel conversion rates,
 drop-off by stage, average days per stage, and rep-level conversion 
 breakdown.
 
-🔗 [View Live Dashboard]([YOUR_LOOKER_STUDIO_LINK_HERE](https://datastudio.google.com/reporting/0658d1b6-ee38-4dbb-922e-fd8198c19c48))
+🔗 [View Live Dashboard](https://datastudio.google.com/reporting/0658d1b6-ee38-4dbb-922e-fd8198c19c48)
