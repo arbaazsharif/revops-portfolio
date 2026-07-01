@@ -1,7 +1,7 @@
 -- ============================================================
 -- Project 5: AI-Powered Deal Risk Scorer
 -- Table: novu.current_deals
--- Live pipeline deals (not yet closed) to be scored for risk.
+-- Live pipeline deals to be scored for risk.
 -- 25 deals total: 20 SMB/Mid-Market + 5 Enterprise
 -- ============================================================
 
