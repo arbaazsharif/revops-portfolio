@@ -1,7 +1,7 @@
 import anthropic
 import psycopg2
 
-# ── Database connection ──────────────────────────────────────
+# ── Database connection 
 conn = psycopg2.connect(
     host="localhost",
     database="postgres",
@@ -11,7 +11,7 @@ conn = psycopg2.connect(
 )
 cursor = conn.cursor()
 
-# ── Rep win rates from Project 3 ─────────────────────────────
+# ── Rep win rates from Project 3 
 rep_win_rates = {
     1: 69.2,  # Marcus Allen
     2: 61.5,  # Priya Nair
@@ -28,7 +28,7 @@ rep_names = {
     5: 'Daniel Okafor'
 }
 
-# ── Average days per stage from Project 4 ───────────────────
+# ── Average days per stage from Project 4
 avg_days_per_stage = {
     'Lead': 4.6,
     'Discovery Call': 6.9,
@@ -37,7 +37,7 @@ avg_days_per_stage = {
     'Negotiation': 17.1
 }
 
-# ── Scoring functions ────────────────────────────────────────
+# ── Scoring functions 
 def score_days_in_stage(stage, days):
     avg = avg_days_per_stage.get(stage, 10)
     over = days - avg
@@ -104,7 +104,7 @@ cursor.execute("""
 """)
 deals = cursor.fetchall()
 
-# ── Score each deal and collect results ──────────────────────
+# ── Score each deal and collect results
 scored_deals = []
 
 for deal in deals:
@@ -131,7 +131,7 @@ for deal in deals:
         'rating': rating
     })
 
-# ── Build summary for Claude API ─────────────────────────────
+# ── Build summary for Claude API 
 high_risk = [d for d in scored_deals if d['rating'] == 'HIGH']
 medium_risk = [d for d in scored_deals if d['rating'] == 'MEDIUM']
 low_risk = [d for d in scored_deals if d['rating'] == 'LOW']
@@ -148,7 +148,7 @@ summary_text += "\nMEDIUM RISK DEALS:\n"
 for d in medium_risk:
     summary_text += f"- {d['company']} | Rep: {d['rep']} | {d['segment']} | {d['source']} | Stage: {d['stage']} | Days in stage: {d['days']} | Score: {d['score']}/100\n"
 
-# ── Send to Claude API for narrative ─────────────────────────
+# ── Send to Claude API for narrative 
 client = anthropic.Anthropic(api_key="YOUR_API_KEY_HERE")
 
 message = client.messages.create(
@@ -170,7 +170,7 @@ Be direct and specific. Use the company names and rep names in your response."""
     ]
 )
 
-# ── Print results ─────────────────────────────────────────────
+# ── Print results
 print("=" * 60)
 print("NOVU SOFTWARE — AI DEAL RISK SCORER")
 print("Powered by Claude API")
