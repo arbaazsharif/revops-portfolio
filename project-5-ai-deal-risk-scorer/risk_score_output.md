@@ -1,5 +1,4 @@
 # Novu Software — AI Deal Risk Scorer Output
-*Powered by Claude API*
 
 ---
 
