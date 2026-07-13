@@ -42,3 +42,6 @@ deals simultaneously, triggering a recommended 1:1 coaching conversation.
 - `deal_risk_scorer.py` — Main Python script (PostgreSQL + Claude API)
 - `project5_current_deals_seed.sql` — 25 pipeline deals loaded into PostgreSQL
 - `risk_score_output.txt` — Sample output from the scorer
+
+## Demo
+[Watch Demo Video]((https://www.youtube.com/watch?v=5cdycenJkUY))
