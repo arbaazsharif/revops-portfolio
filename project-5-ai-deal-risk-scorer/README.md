@@ -44,4 +44,4 @@ deals simultaneously, triggering a recommended 1:1 coaching conversation.
 - `risk_score_output.txt` — Sample output from the scorer
 
 ## Demo
-[Watch Demo Video]((https://www.youtube.com/watch?v=5cdycenJkUY))
+[▶️ Watch Demo Video](https://www.youtube.com/watch?v=5cdycenJkUY)
