@@ -12,7 +12,7 @@ Closed-lost deals aren't dead, they're just data sitting in a CRM. A deal lost t
 2. **Resolve to a domain.** Each company is resolved to a real, verified web domain — the identifier Apollo's API needs to look a company up.
 3. **Enrich via the Apollo API.** For every company, a live call to Apollo's Organization Enrichment endpoint pulls current firmographic data: industry, employee count, 12-month headcount growth, and technology stack.
 4. **Score for revival potential.** A weighted model combines three independent signals — the original loss reason, recent headcount growth, and company size fit — into a 0-90 score, then buckets each deal into Hot / Warm / Cold.
-5. **Generate outreach via the Claude API.** For every Hot and Warm deal, a call to Claude's Messages API generates a short, specific re-engagement email that references the real reason the deal was lost and the concrete signal that makes now a better time to reconnect — not a generic template.
+5. **Generate outreach via the Claude API.** For every Hot and Warm deal, a call to Claude's Messages API generates a short, specific re-engagement email that references the real reason the deal was lost and the concrete signal that makes now a better time to reconnect, not a generic template.
 
 ## Why the API calls are the point
 
