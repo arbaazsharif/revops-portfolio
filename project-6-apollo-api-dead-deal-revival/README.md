@@ -4,7 +4,7 @@ A Python pipeline that takes closed-lost deals, enriches each company with live 
 
 ## The problem this solves
 
-Closed-lost deals aren't dead — they're just data sitting in a CRM. A deal lost to "bad timing" a year ago might be a live opportunity today if the company has grown, raised funding, or changed its tech stack since. Most sales teams never revisit lost deals systematically because doing it manually — researching every company, judging which ones are worth a second look, writing a personalized note for each — doesn't scale. This project automates that entire judgment call with live data instead of guesswork.
+Closed-lost deals aren't dead, they're just data sitting in a CRM. A deal lost to "bad timing" a year ago might be a live opportunity today if the company has grown, raised funding, or changed its tech stack since. Most sales teams never revisit lost deals systematically because doing it manually by researching every company, judging which ones are worth a second look, writing a personalized note for each, doesn't scale. This project automates that entire judgment call with live data instead of guesswork.
 
 ## How it works
 
