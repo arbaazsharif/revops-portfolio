@@ -4,7 +4,7 @@ A Python pipeline that takes closed-lost deals, enriches each company with live 
 
 ## The problem this solves
 
-Closed-lost deals aren't dead, they're just data sitting in a CRM. A deal lost to "bad timing" a year ago might be a live opportunity today if the company has grown, raised funding, or changed its tech stack since. Most sales teams never revisit lost deals systematically because doing it manually by researching every company, judging which ones are worth a second look, writing a personalized note for each, doesn't scale. This project automates that entire judgment call with live data instead of guesswork.
+Closed-lost deals aren't dead — they're just data sitting in a CRM. A deal lost to "bad timing" a year ago might be a live opportunity today if the company has grown, raised funding, or changed its tech stack since. Most sales teams never revisit lost deals systematically because doing it manually — researching every company, judging which ones are worth a second look, writing a personalized note for each — doesn't scale. This project automates that entire judgment call with live data instead of guesswork.
 
 ## How it works
 
@@ -12,11 +12,11 @@ Closed-lost deals aren't dead, they're just data sitting in a CRM. A deal lost t
 2. **Resolve to a domain.** Each company is resolved to a real, verified web domain — the identifier Apollo's API needs to look a company up.
 3. **Enrich via the Apollo API.** For every company, a live call to Apollo's Organization Enrichment endpoint pulls current firmographic data: industry, employee count, 12-month headcount growth, and technology stack.
 4. **Score for revival potential.** A weighted model combines three independent signals — the original loss reason, recent headcount growth, and company size fit — into a 0-90 score, then buckets each deal into Hot / Warm / Cold.
-5. **Generate outreach via the Claude API.** For every Hot and Warm deal, a call to Claude's Messages API generates a short, specific re-engagement email that references the real reason the deal was lost and the concrete signal that makes now a better time to reconnect, not a generic template.
+5. **Generate outreach via the Claude API.** For every Hot and Warm deal, a call to Claude's Messages API generates a short, specific re-engagement email that references the real reason the deal was lost and the concrete signal that makes now a better time to reconnect — not a generic template.
 
 ## Why the API calls are the point
 
-This isn't a scoring spreadsheet with static inputs. Steps 3 and 5 are live, authenticated calls to two different third-party APIs, each returning real data that directly shapes the output: Apollo's response changes the score, and the score changes what Claude is told to write. Every email in `generated_emails.md` was generated from that specific company's actual enriched data, nothing here is hand-written or templated.
+This isn't a scoring spreadsheet with static inputs. Steps 3 and 5 are live, authenticated calls to two different third-party APIs, each returning real data that directly shapes the output: Apollo's response changes the score, and the score changes what Claude is told to write. Every email in `generated_emails.md` was generated from that specific company's actual enriched data — nothing here is hand-written or templated.
 
 ## Results from this run
 
@@ -45,4 +45,3 @@ Python · PostgreSQL · Apollo.io API · Claude API (Anthropic) · Beekeeper Stu
 ## What I'd build next in production
 
 Point-level contact resolution (Apollo People Search) to find a real contact at each company, and a send integration (Gmail API or HubSpot) to push generated emails directly into a sequence — the same pattern used in Project 2 (Dead Deal Resurrection System), extended with live enrichment and AI-generated copy instead of static templates.
-

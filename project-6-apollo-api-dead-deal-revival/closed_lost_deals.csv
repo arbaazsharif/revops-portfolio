@@ -1,0 +1,28 @@
+deal_id,rep_id,company_name,deal_stage,close_date,amount,deal_source,loss_reason,sales_cycle_days,segment
+4,1,BluePeak Logistics,Closed Lost,2024-04-15,19000,Outbound,Budget,55,SMB
+7,1,Lakeshore Media,Closed Lost,2024-08-19,24000,Inbound,Competitor,48,Mid-Market
+10,1,Pinewood Consulting,Closed Lost,2024-12-20,21000,Outbound,Timing,66,Mid-Market
+13,1,Ridgeway Corp,Closed Lost,2025-06-18,29000,Outbound,No Decision,72,Mid-Market
+16,2,Flint & Co,Closed Lost,2024-04-22,17000,Outbound,Budget,49,SMB
+18,2,Westside Operations,Closed Lost,2024-07-11,9000,Outbound,Competitor,36,SMB
+20,2,Redwood Ventures,Closed Lost,2024-09-18,22000,Outbound,Timing,53,Mid-Market
+23,2,Brightfield Inc,Closed Lost,2025-01-20,13000,Outbound,Budget,42,SMB
+25,2,Quantum Retail,Closed Lost,2025-05-08,20000,Outbound,No Decision,57,Mid-Market
+28,3,Delta Processing,Closed Lost,2024-03-19,27000,Outbound,Competitor,61,Mid-Market
+29,3,Granite Works,Closed Lost,2024-04-30,18000,Outbound,Competitor,50,SMB
+31,3,Fox River Digital,Closed Lost,2024-07-24,14000,Outbound,Timing,44,SMB
+32,3,Beacon Capital,Closed Lost,2024-08-30,39000,Inbound,Competitor,74,Mid-Market
+34,3,Eastgate Media,Closed Lost,2024-11-22,25000,Outbound,Competitor,67,Mid-Market
+36,3,Bridgeway Consulting,Closed Lost,2025-02-25,30000,Outbound,Budget,58,Mid-Market
+38,3,Lakewood Partners,Closed Lost,2025-05-21,11000,Outbound,Competitor,37,SMB
+41,4,Maple Grove Tech,Closed Lost,2024-03-31,32000,Outbound,Timing,69,Mid-Market
+43,4,Glenview Advisors,Closed Lost,2024-06-18,24000,Outbound,Budget,55,Mid-Market
+46,4,Copperview Corp,Closed Lost,2024-10-22,36000,Outbound,Competitor,77,Mid-Market
+48,4,Thornfield Logistics,Closed Lost,2025-01-14,28000,Outbound,No Decision,62,Mid-Market
+50,4,Riverview Partners,Closed Lost,2025-04-11,21000,Inbound,Budget,50,Mid-Market
+52,4,Highland Software,Closed Lost,2025-07-07,33000,Outbound,Timing,71,Mid-Market
+54,5,Velocity Retail,Closed Lost,2024-03-12,15000,Outbound,Budget,46,SMB
+57,5,Midpoint Digital,Closed Lost,2024-07-16,26000,Outbound,Budget,57,Mid-Market
+60,5,Foundry Tech,Closed Lost,2024-11-19,18000,Outbound,Budget,51,SMB
+62,5,Sterling Path Co,Closed Lost,2025-03-05,31000,Outbound,Competitor,68,Mid-Market
+65,5,Ashford Operations,Closed Lost,2025-07-15,22000,Outbound,No Decision,60,Mid-Market

@@ -1,0 +1,28 @@
+deal_id,company_name,real_company_name,domain,amount,close_date,loss_reason,segment,industry,employee_count,headcount_growth_6mo,headcount_growth_12mo,latest_funding_stage,total_funding,technology_count,enrichment_status
+4,BluePeak Logistics,XPO Inc.,xpo.com,19000,2024-04-15,Budget,SMB,transportation/trucking/railroad,37000,0.00969682091567448,0.004272982541814186,,,267,success
+7,Lakeshore Media,Prologis Inc.,prologis.com,24000,2024-08-19,Competitor,Mid-Market,real estate,2900,0.02389781623403379,0.05207451312447079,,,203,success
+10,Pinewood Consulting,Cushman & Wakefield,cushmanwakefield.com,21000,2024-12-20,Timing,Mid-Market,real estate,53000,0.02444029167124693,0.04939569101418812,,,852,success
+13,Ridgeway Corp,Regal Rexnord Corporation,regalrexnord.com,29000,2025-06-18,No Decision,Mid-Market,electrical/electronic manufacturing,30000,0.03307347035199622,0.04893259774526265,,,522,success
+16,Flint & Co,Owens Corning,owenscorning.com,17000,2024-04-22,Budget,SMB,building materials,25000,-0.0116153012234784,-0.02386050780055063,,,428,success
+18,Westside Operations,J.B. Hunt Transport Services,jbhunt.com,9000,2024-07-11,Competitor,SMB,transportation/trucking/railroad,32000,0.004345576823590274,-0.01681353185455282,,,210,success
+20,Redwood Ventures,Colliers International,colliers.com,22000,2024-09-18,Timing,Mid-Market,real estate,23000,0.02130515014259353,0.04145520898671381,,,471,success
+23,Brightfield Inc,Generac Holdings,generac.com,13000,2025-01-20,Budget,SMB,utilities,9400,0.00590744995077125,0.01827242524916944,,,494,success
+25,Quantum Retail,The Kroger Co.,kroger.com,20000,2025-05-08,No Decision,Mid-Market,retail,403000,-0.005032969133246265,-0.01779818244709286,,,467,success
+28,Delta Processing,Illinois Tool Works,itw.com,27000,2024-03-19,Competitor,Mid-Market,machinery,43000,0.02400698384984723,0.01867129830655666,,,225,success
+29,Granite Works,Watts Water Technologies,wattswater.com,18000,2024-04-30,Competitor,SMB,building materials,5700,0.03983794733288318,0.0664819944598338,,,291,success
+31,Fox River Digital,Old Dominion Freight Line,odfl.com,14000,2024-07-24,Timing,SMB,transportation/trucking/railroad,21000,0.00499265785609398,-0.0101243853051779,,,180,success
+32,Beacon Capital,Cousins Properties,cousins.com,39000,2024-08-30,Competitor,Mid-Market,real estate,360,0.01506024096385542,0.03058103975535168,,,51,success
+34,Eastgate Media,Iron Mountain Incorporated,ironmountain.com,25000,2024-11-22,Competitor,Mid-Market,information technology & services,30000,0.02195592055644012,0.03102806898884004,,,569,success
+36,Bridgeway Consulting,JLL (Jones Lang LaSalle),jll.com,30000,2025-02-25,Budget,Mid-Market,real estate,112000,0.01697822895849177,0.04134371604491126,,,1537,success
+38,Lakewood Partners,CBRE Group,cbre.com,11000,2025-05-21,Competitor,SMB,real estate,155000,0.02466732275041719,0.04173916826170176,,,937,success
+41,Maple Grove Tech,Parker Hannifin,parker.com,32000,2024-03-31,Timing,Mid-Market,machinery,58000,0.01746650839409869,0.01738024586689275,,,626,success
+43,Glenview Advisors,Eaton Corporation,eaton.com,24000,2024-06-18,Budget,Mid-Market,electrical/electronic manufacturing,97000,0.0132204756146715,0.02253498210218028,,,1369,success
+46,Copperview Corp,Dover Corporation,dovercorporation.com,36000,2024-10-22,Competitor,Mid-Market,machinery,24000,0.03765690376569038,0.03852596314907872,,,629,success
+48,Thornfield Logistics,Werner Enterprises,werner.com,28000,2025-01-14,No Decision,Mid-Market,transportation/trucking/railroad,13000,0.008678237650200267,0.003986710963455149,,,177,success
+50,Riverview Partners,Choice Hotels International,choicehotels.com,21000,2025-04-11,Budget,Mid-Market,hospitality,1800,0.01382799325463744,0.02628883578012974,,,287,success
+52,Highland Software,HCA Healthcare,hcahealthcare.com,33000,2025-07-07,Timing,Mid-Market,hospital & health care,320000,0.008703271028037383,0.02005375232582179,,,721,success
+54,Velocity Retail,Dollar Tree Inc.,dollartree.com,15000,2024-03-12,Budget,SMB,retail,153000,0.007198052291732825,-0.0006301859048419284,,,230,success
+57,Midpoint Digital,Ross Stores Inc.,rossstores.com,26000,2024-07-16,Budget,Mid-Market,retail,111000,0.01041573933944628,0.01894245443935721,,,248,success
+60,Foundry Tech,Community Health Systems,chs.net,18000,2024-11-19,Budget,SMB,hospital & health care,57000,0.007806955287437899,0.02731054440224272,,,269,success
+62,Sterling Path Co,Marriott International,marriott.com,31000,2025-03-05,Competitor,Mid-Market,hospitality,414000,0.01119062484991115,0.02450062042286076,,,843,success
+65,Ashford Operations,Hyatt Hotels Corporation,hyatt.com,22000,2025-07-15,No Decision,Mid-Market,hospitality,50000,0.01163888015099088,0.01998097050428164,,,571,success
