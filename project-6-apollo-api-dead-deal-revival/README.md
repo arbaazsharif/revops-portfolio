@@ -16,7 +16,7 @@ Closed-lost deals aren't dead, they're just data sitting in a CRM. A deal lost t
 
 ## Why the API calls are the point
 
-This isn't a scoring spreadsheet with static inputs. Steps 3 and 5 are live, authenticated calls to two different third-party APIs, each returning real data that directly shapes the output: Apollo's response changes the score, and the score changes what Claude is told to write. Every email in `generated_emails.md` was generated from that specific company's actual enriched data — nothing here is hand-written or templated.
+This isn't a scoring spreadsheet with static inputs. Steps 3 and 5 are live, authenticated calls to two different third-party APIs, each returning real data that directly shapes the output: Apollo's response changes the score, and the score changes what Claude is told to write. Every email in `generated_emails.md` was generated from that specific company's actual enriched data, nothing here is hand-written or templated.
 
 ## Results from this run
 
